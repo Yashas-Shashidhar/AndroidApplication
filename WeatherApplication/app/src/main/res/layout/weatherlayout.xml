@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#CFA558"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/recy_day_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9E9380"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/recy_min_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recy_day_date" />
+
+    <TextView
+        android:id="@+id/recy_descp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoSizeTextType="uniform"
+        android:gravity="left"
+        android:lines="2"
+        android:maxLines="2"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/recy_weather_icon"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/recy_min_max"
+        app:layout_constraintTop_toBottomOf="@+id/recy_min_max" />
+
+    <ImageView
+        android:id="@+id/recy_weather_icon"
+        android:layout_width="117dp"
+        android:layout_height="92dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recy_day_date"
+        app:srcCompat="@drawable/hail" />
+
+    <TextView
+        android:id="@+id/recy_precp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="@+id/recy_descp"
+        app:layout_constraintTop_toBottomOf="@+id/recy_descp" />
+
+    <TextView
+        android:id="@+id/recy_uv_indx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/recy_precp"
+        app:layout_constraintTop_toBottomOf="@+id/recy_precp" />
+
+    <TextView
+        android:id="@+id/recy_morning_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/recy_day"
+        app:layout_constraintStart_toStartOf="@+id/recy_day"
+        app:layout_constraintTop_toBottomOf="@+id/recy_uv_indx" />
+
+    <TextView
+        android:id="@+id/recy_afternooon_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/recy_noon"
+        app:layout_constraintStart_toStartOf="@+id/recy_noon"
+        app:layout_constraintTop_toTopOf="@+id/recy_morning_temp" />
+
+    <TextView
+        android:id="@+id/recy_eve_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="@+id/recy_eve"
+        app:layout_constraintStart_toStartOf="@+id/recy_eve"
+        app:layout_constraintTop_toTopOf="@+id/recy_afternooon_temp" />
+
+    <TextView
+        android:id="@+id/recy_night_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/recy_night"
+        app:layout_constraintStart_toStartOf="@+id/recy_night"
+        app:layout_constraintTop_toTopOf="@+id/recy_eve_temp" />
+
+    <TextView
+        android:id="@+id/recy_night"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="@string/Night"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/recy_eve"
+        app:layout_constraintTop_toTopOf="@+id/recy_eve" />
+
+    <TextView
+        android:id="@+id/recy_noon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="@string/afternoon"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/recy_day" />
+
+    <TextView
+        android:id="@+id/recy_eve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/Evening"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/recy_noon" />
+
+    <TextView
+        android:id="@+id/recy_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="22dp"
+        android:text="@string/morning"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/recy_noon"
+        app:layout_constraintTop_toBottomOf="@+id/recy_morning_temp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

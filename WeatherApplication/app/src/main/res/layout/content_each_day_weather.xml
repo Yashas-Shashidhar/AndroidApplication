@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#AF9463"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+
+ <TextView
+     android:id="@+id/recy_hday"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textColor="@color/white"
+     android:textStyle="bold"
+     app:layout_constraintEnd_toStartOf="@+id/guideline4"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent" />
+
+ <TextView
+     android:id="@+id/recy_htime"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textColor="@color/white"
+     android:textStyle="normal|bold"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.498"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/recy_hday" />
+
+ <ImageView
+     android:id="@+id/recy_hicon"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/recy_htime"
+     app:srcCompat="@drawable/cloudy" />
+
+ <androidx.constraintlayout.widget.Guideline
+     android:id="@+id/guideline4"
+     android:layout_width="0dp"
+     android:layout_height="0dp"
+     android:layout_marginStart="20dp"
+     android:layout_marginEnd="391dp"
+     android:orientation="vertical"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintGuide_begin="109dp"
+     app:layout_constraintStart_toStartOf="parent" />
+
+ <TextView
+     android:id="@+id/recy_htemp"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textColor="@color/white"
+     android:textStyle="normal|bold"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/recy_hicon" />
+
+ <TextView
+     android:id="@+id/recy_hdescp"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textColor="@color/white"
+     android:textStyle="normal|bold"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/recy_htemp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CivilAdvocacy</string>
+    <string name="address_tag">Address:</string>
+    <string name="Phone_tag">Phone:</string>
+    <string name="Website_tag">Website:</string>
+    <string name="email_tag">Email Tag:</string>
+    <string name="wrong_location">Location might be incorrect,Please enter correct location</string>
+    <string name="data_provided">Data provided by</string>
+    <string name="copyrights">\u00A9 2022,Shreenidhi Ramachandran</string>
+    <string name="app_version">Version 1.0</string>
+    <string name="civic_api"><u>Google Civic Information API</u></string>
+    <string name="denied_acess">Location Access Denied</string>
+</resources>

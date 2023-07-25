@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0066cc"
+    tools:context=".EditActivity">
+
+    <EditText
+        android:id="@+id/Notename"
+        android:layout_width="414dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:background="#e7f2fd"
+        android:maxLines="1"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:id="@+id/Note_descp"
+        android:layout_width="413dp"
+        android:layout_height="369dp"
+        android:layout_marginTop="40dp"
+        android:background="#e7f2fd"
+        android:gravity="top|start"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/Notename"
+        tools:layout_editor_absoluteX="-4dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

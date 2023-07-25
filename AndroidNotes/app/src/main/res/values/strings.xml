@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Android Notes</string>
+    <string name="edit_menu">Edit Menu</string>
+    <string name="info_menu">Info Menu</string>
+    <string name="save_menu">Save Menu</string>
+    <string name="file_name">Notes.json</string>
+    <string name="updated_note">Note Successfully Updated</string>
+    <string name="no_file">No JSON Product File Present</string>
+    <string name="name_date">\u00A9 2022,Shreenidhi R</string>
+    <string name="app_version">Version 1.0</string>
+    <string name="color_filed">#e7f2fd</string>
+    <string name="color_backgorund">#0066cc</string>
+</resources>
